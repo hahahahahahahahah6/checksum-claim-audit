@@ -117,3 +117,9 @@ positive one). A bare `checksum` noun is not a claim.
   selection through `hashlib.new` counts without identifying the algorithm.
 - Locally defined functions that shadow an imported digest name are
   excluded; module-level aliasing beyond one import step is not tracked.
+
+## Development
+
+```sh
+python3 -m unittest discover -s tests -v
+```
